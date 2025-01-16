@@ -1,15 +1,7 @@
 pipeline {
     agent any
 
-    // environment {
-    //     // Replace with your Docker Hub username
-    //     DOCKER_HUB_USERNAME = "salari111"
-    //     // Name of the Docker image (repo name in Docker Hub)
-    //     DOCKER_IMAGE_NAME = "my-custom-app"
-    //     // Version tag
-    //     DOCKER_IMAGE_TAG = "2.0"
-    // }
-
+    
     stages {
         // stage('Checkout') {
         //     steps {
@@ -37,6 +29,7 @@ pipeline {
                 }
             
             }
+        }
          stage('Run Docker Image') {
             steps {
                 dir ('my-app') {
@@ -48,8 +41,4 @@ pipeline {
             
             }
         }
-
-   
-   
-    }
 }
