@@ -15,4 +15,24 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <properties>
+      <!-- Use Java 8 or 11 or 17, depending on your environment -->
+      <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <build>
+      <plugins>
+          <!-- Update the Maven compiler plugin if necessary -->
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>3.8.1</version>
+              <configuration>
+                  <source>${maven.compiler.source}</source>
+                  <target>${maven.compiler.target}</target>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
 </project>
