@@ -20,6 +20,8 @@ pipeline {
 
         stage('Build Maven Project') {
             steps {
+                dir('my-app') {
+                    // Build the Maven project
                 sh "mvn clean package -DskipTests"
             }
         }
