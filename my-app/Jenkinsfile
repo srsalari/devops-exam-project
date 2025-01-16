@@ -32,12 +32,12 @@ pipeline {
         }
          stage('Run Docker Image') {
             steps {
-                dir ('my-app') {
+                // dir ('my-app') {
                     // Run the Docker image
                     sh """
                        docker run -p 8090:8080 my-custom-app:2.0  
                     """
-                }
+                // }
             
             }
         }
