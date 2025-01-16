@@ -1,4 +1,4 @@
-package com.example;
+package com.mycompany;
 
 /**
  * Hello world!
@@ -6,6 +6,6 @@ package com.example;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello This is Java app CI/CD deployment!");
+        System.out.println("Hello from my Dockerized Maven app!");
     }
 }

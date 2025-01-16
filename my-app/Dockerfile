@@ -6,11 +6,11 @@ WORKDIR /app
 
 # 3. Copy the built JAR file from your local machine's "target" folder to the container.
 #    IMPORTANT: Replace 'my-app-1.0-SNAPSHOT.jar' with your actual JAR filename.
-COPY target/my-app-1.0-SNAPSHOT.jar /app/my-app.jar
+COPY target/my-maven-docker-project.jar /app/my-maven-docker-project.jar
 
 # 4. Expose the port that your application will run on (optional, but a common practice).
 #    If your app doesn’t bind to 8080, adjust accordingly.
 EXPOSE 8080
 
 # 5. Run the JAR file.
-CMD ["java", "-jar", "my-app.jar"]
+CMD ["java", "-jar", "my-maven-docker-project.jar"]
