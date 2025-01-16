@@ -83,4 +83,5 @@ pipeline {
     //         sh "docker rmi ${DOCKER_HUB_USERNAME}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} || true"
     //     }
     // }
+    }
 }
